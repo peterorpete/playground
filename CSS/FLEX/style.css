@@ -1,0 +1,274 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+   box-sizing: border-box;
+   font-family: 'Montserrat', sans-serif;
+
+ }
+ .shake {
+   animation: shake 2s cubic-bezier(.36,.07,.19,.97) infinite;
+   transform: translate3d(0, 0, 0);
+   /* backface-visibility: hidden;
+   perspective: 1000px; */
+ }
+ 
+ @keyframes shake {
+   10%, 90% {
+     transform: translate3d(-1px, 0, 0);
+   }
+   
+   20%, 80% {
+     transform: translate3d(2px, 0, 0);
+   }
+ 
+   30%, 50%, 70% {
+     transform: translate3d(-4px, 0, 0);
+   }
+ 
+   40%, 60% {
+     transform: translate3d(4px, 0, 0);
+   }
+ }
+ h3 {
+    font-weight: 700;
+ }
+ h4 {
+    font-weight: 700;
+    color: #888;
+ }
+ *, *:before, *:after {
+   box-sizing: inherit;
+ }
+
+div {
+   background-color: hsla(31,15%,50%,.1);
+   margin: 10px;
+   padding: 20px;
+}
+.child {
+   width: 100px;
+ }
+ .child-auto {
+   width: auto;
+ }
+ .parent {
+   display: flex;
+   align-items: flex-start;
+   height: 300px;
+ }
+ .parent-row {
+   display: flex;
+   flex-direction: row;
+   height: 100%;
+ }
+ .parent-row-reverse {
+   display: flex;
+   flex-direction: row-reverse;
+   height: 100%;
+ }
+ .parent-column {
+   display: flex;
+   flex-direction: column;
+   height: 100%;
+ }
+
+ .parent-column-reverse {
+   display: flex;
+   flex-direction: column-reverse;
+   height: 100%;
+ }
+.parent-nowrap {
+   display: flex;
+   align-items: flex-start;
+   flex-wrap: nowrap;
+   height: 100%;
+ 
+}
+.parent-wrap {
+   display: flex;
+   align-items: flex-start;
+   flex-wrap: wrap;
+   height: 400px;
+  
+}
+.parent-wrap-reverse {
+   display: flex;
+   align-items: flex-start;
+   flex-wrap: wrap-reverse;
+   height: 400px;
+  
+}
+.parent-flex-flow-row-nowrap {
+   display: flex;
+   flex-flow: row nowrap;
+   height: 400px;
+ }
+ .parent-flex-flow-column-reverse {
+   display: flex;
+   flex-flow: column-reverse;
+   height: 400px;
+  }
+ .parent-flex-flow-column-wrap {
+   display: flex;
+   flex-flow: column wrap;
+   height: 400px;
+  }
+ .parent-flex-flow-row-reverse-wrap-reverse {
+   display: flex;
+   flex-flow: row-reverse wrap-reverse;
+   height: 400px;
+  }
+  .child-order-minus-1 {
+   order: -1;
+   background-color: hsla(31,15%,50%,.3);
+ }
+ .child-order-plus-1 {
+   order: 1;
+   background-color: hsla(31,15%,50%,.3);
+ }
+ .parent-justify-content-flex-start{
+   display: flex;
+   justify-content: flex-start;
+   height: 100%;
+ }
+ .parent-justify-content-flex-end{
+   display: flex;
+   justify-content: flex-end;
+   height: 100%;
+ }
+ .parent-justify-content-center{
+   display: flex;
+   justify-content: center;
+   height: 100%;
+ }
+ .parent-justify-content-space-between{
+   display: flex;
+   justify-content: space-between;
+   height: 100%;
+ }
+ .parent-justify-content-space-around{
+   display: flex;
+   justify-content: space-around;
+   height: 100%;
+ }
+ .parent-justify-content-space-evenly{
+   display: flex;
+   justify-content: space-evenly;
+   height: 100%;
+ }
+ .parent-align-items-flex-start {
+   display: flex;
+   align-items: flex-start;
+   height: 300px;
+ }
+ .parent-align-items-flex-end {
+   display: flex;
+   align-items: flex-end;
+   height: 300px;
+ }
+ .parent-align-items-center {
+   display: flex;
+   align-items: center;
+   height: 300px;
+ }
+ .parent-align-items-baseline {
+   display: flex;
+   align-items: baseline;
+   height: 300px;
+ }
+
+ .parent-align-items-stretch {
+   display: flex;
+   align-items: stretch;
+   height: 300px;
+ }
+ .child-align-self-flex-start {
+   align-self: flex-start;
+   background-color: hsla(31,15%,50%,.3);
+
+}
+.child-align-self-flex-end {
+   align-self: flex-end;
+   background-color: hsla(31,15%,50%,.3);
+
+}
+.child-align-self-center {
+   align-self: center;
+   background-color: hsla(31,15%,50%,.3);
+
+}
+.child-align-self-baseline {
+   align-self: baseline;
+   background-color: hsla(31,15%,50%,.3);
+
+}
+.child-align-self-stretch {
+   align-self: stretch;
+   background-color: hsla(31,15%,50%,.3);
+
+}
+
+
+
+.parent-align-content-flex-start {
+   display: flex;
+   flex-wrap: wrap;
+   align-content: flex-start;
+   height: 300px;
+}
+.parent-align-content-flex-end {
+   display: flex;
+   flex-wrap: wrap;
+   align-content: flex-end;
+   height: 300px;
+}
+.parent-align-content-center {
+   display: flex;
+   flex-wrap: wrap;
+   align-content: center;
+   height: 300px;
+}
+.parent-align-content-space-between {
+   display: flex;
+   flex-wrap: wrap;
+   align-content: space-between;
+   height: 300px;
+}
+.parent-align-content-space-around {
+   display: flex;
+   flex-wrap: wrap;
+   align-content: space-around;
+   height: 300px;
+}
+.parent-align-content-space-evenly {
+   display: flex;
+   flex-wrap: wrap;
+   align-content: space-evenly;
+   height: 300px;
+}
+.parent-align-content-space-stretch {
+   display: flex;
+   flex-wrap: wrap;
+   align-content: stretch;
+   height: 300px;
+}
+.child-flex-grow-1 {
+   flex-grow: 1;
+   background-color: hsla(31,15%,50%,.3);
+
+}
+.child-flex-shrink-1 {
+   flex-shrink: 1;
+   background-color: hsla(31,15%,50%,.3);
+}
+.child-flex-grow-5 {
+   flex-grow: 5;
+   background-color: hsla(31,15%,50%,.3);
+}
+.child-flex-basis-30 {
+   flex-basis: 30%;
+   background-color: hsla(31,15%,50%,.3);
+}
+.child-flex-basis-content {
+   flex-basis: content;
+   background-color: hsla(31,15%,50%,.3);
+}
