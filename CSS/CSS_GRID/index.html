@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>CSS Grid</title>
+   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap" rel="stylesheet">
+
+   <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+   <h3>
+      grid-template-columns 
+   </h3>
+   
+<h4>
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+</h4>
+   <div class="parent-1">
+      <div class="child">1</div>
+      <div class="child">2<br>2<br>2</div>
+      <div class="child">3</div>
+      <div class="child">4</div>
+  </div>
+  <h4>
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+</h4>
+  <div class="parent-2">
+   <div class="child">1</div>
+   <div class="child">2<br>2<br>2</div>
+   <div class="child">3</div>
+   <div class="child">4</div>
+</div>
+<h4>
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   align-items: center;
+</h4>
+<div class="parent-3">
+   <div class="child shake child-align-self-bottom">align-self: flex-end;</div>
+   <div class="child">2<br>2<br>2</div>
+   <div class="child shake child-align-self-stretch">align-self: flex-stretch;</div>
+   <div class="child">4</div>
+</div>
+<h4>
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   align-items: flex-end;
+</h4>
+<div class="parent-4">
+   <div class="child">1</div>
+   <div class="child">2<br>2<br>2</div>
+   <div class="child">3</div>
+   <div class="child shake child-align-self-center">align-self: flex-center;</div>
+</div>
+<h4>
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   align-items: flex-start;
+</h4>
+<div class="parent-5">
+   <div class="child">1</div>
+   <div class="child">2<br>2<br>2</div>
+   <div class="child">3</div>
+   <div class="child shake child-align-self-top">align-self: flex-start;</div>
+</div>
+<h4>
+   display: grid;
+   grid-template-columns: 100px 150px 400px;
+   align-items: flex-start;
+</h4>
+<div class="parent-6">
+   <div class="child">1</div>
+   <div class="child">2<br>2<br>2</div>
+   <div class="child">3</div>
+   <div class="child">4</div>
+   <div class="child">5</div>
+   <div class="child">6</div>
+
+</div>
+<h4>
+   display: grid;<br>
+   grid-template-columns: 100px 150px 200px 400px 90px;<br>
+   align-items: flex-end;<br>
+ </h4>
+<div class="parent-7">
+   <div class="child">1</div>
+   <div class="child">2<br>2<br>2</div>
+   <div class="child">3</div>
+   <div class="child">4</div>
+   <div class="child">5</div>
+   <div class="child">6</div>
+   <div class="child">7</div>
+   <div class="child">8</div>
+   <div class="child">9</div>
+</div>
+<h4>
+   display: grid;<br>
+   grid-template-columns: 100px 150px 200px 400px 90px 50px 170px 80px 60px 40px<br>
+   align-items: flex-stretch;<br>
+ </h4>
+<div class="parent-8">
+   <div class="child">1</div>
+   <div class="child">2<br>2<br>2</div>
+   <div class="child">3</div>
+   <div class="child">4</div>
+   <div class="child">5</div>
+   <div class="child">6</div>
+   <div class="child">7</div>
+   <div class="child">8</div>
+   <div class="child">9</div>
+</div>
+<h4>
+   display: grid;<br>
+ </h4>
+
+<div class="parent-9">
+   <div class="child a">A</div>
+   <div class="child b">B</div>
+   <div class="child c">C</div>
+   <div class="child d">D</div>
+   <div class="child e">E</div>
+   <div class="child f">F</div>
+</div>
+
+
+</body>
+</html>
